@@ -38,29 +38,43 @@ const ServicesPage = () => {
                         <div className={styles.processStep}>
                             <div className={styles.stepNumber}>1</div>
                             <div className={styles.stepContent}>
-                                <h3>Estrategia</h3>
-                                <p>Analizamos tu mercado y definimos el camino hacia el éxito.</p>
+                                <h3>Primer contacto</h3>
+                                <p>Iniciamos la conversación para entender tus necesidades básicas y objetivos.</p>
                             </div>
                         </div>
                         <div className={styles.processStep}>
                             <div className={styles.stepNumber}>2</div>
                             <div className={styles.stepContent}>
-                                <h3>Diseño</h3>
-                                <p>Creamos una experiencia visual única y memorable.</p>
+                                <h3>Reunión de requerimientos</h3>
+                                <p>Profundizamos en los detalles técnicos y funcionales para definir el alcance exacto.</p>
                             </div>
                         </div>
                         <div className={styles.processStep}>
                             <div className={styles.stepNumber}>3</div>
                             <div className={styles.stepContent}>
                                 <h3>Desarrollo</h3>
-                                <p>Código limpio, rápido y escalable. Sin fallos.</p>
+                                <p>Construimos tu solución con código limpio, eficiente y escalable.</p>
                             </div>
                         </div>
                         <div className={styles.processStep}>
                             <div className={styles.stepNumber}>4</div>
                             <div className={styles.stepContent}>
-                                <h3>Lanzamiento</h3>
-                                <p>Despegue exitoso y soporte continuo para tu crecimiento.</p>
+                                <h3>Validación del cliente</h3>
+                                <p>Te presentamos el avance para asegurar que todo se alinea con tu visión.</p>
+                            </div>
+                        </div>
+                        <div className={styles.processStep}>
+                            <div className={styles.stepNumber}>5</div>
+                            <div className={styles.stepContent}>
+                                <h3>Correcciones finales</h3>
+                                <p>Afinamos los últimos detalles basándonos en tu feedback para un resultado perfecto.</p>
+                            </div>
+                        </div>
+                        <div className={styles.processStep}>
+                            <div className={styles.stepNumber}>6</div>
+                            <div className={styles.stepContent}>
+                                <h3>Despliegue</h3>
+                                <p>Lanzamos tu proyecto al mundo, asegurando un funcionamiento óptimo desde el primer segundo.</p>
                             </div>
                         </div>
                     </div>
