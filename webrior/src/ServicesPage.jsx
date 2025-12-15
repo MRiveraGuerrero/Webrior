@@ -88,7 +88,6 @@ const ServicesPage = () => {
                             className={styles.detailButton}
                             onClick={() => setIsSlideshowOpen(true)}
                         >
-                            <span className={styles.detailButtonIcon}>🎬</span>
                             Ver Proceso Detallado
                             <span className={styles.detailButtonArrow}>→</span>
                         </button>
