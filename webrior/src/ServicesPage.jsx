@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import layoutStyles from './Webrior.module.css';
 import styles from './ServicesPage.module.css';
+import ProcessSlideshow from './ProcessSlideshow';
 
 const ServicesPage = () => {
+    const [isSlideshowOpen, setIsSlideshowOpen] = useState(false);
+
     return (
         <div className={layoutStyles.layout}>
             <Navbar />
@@ -78,8 +81,29 @@ const ServicesPage = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Detailed Process Button */}
+                    <div className={styles.detailButtonContainer}>
+                        <button
+                            className={styles.detailButton}
+                            onClick={() => setIsSlideshowOpen(true)}
+                        >
+                            <span className={styles.detailButtonIcon}>🎬</span>
+                            Ver Proceso Detallado
+                            <span className={styles.detailButtonArrow}>→</span>
+                        </button>
+                        <p className={styles.detailButtonSubtext}>
+                            Explora cada fase con información completa y visual
+                        </p>
+                    </div>
                 </section>
             </div>
+
+            {/* Process Slideshow Modal */}
+            <ProcessSlideshow
+                isOpen={isSlideshowOpen}
+                onClose={() => setIsSlideshowOpen(false)}
+            />
         </div>
     );
 };

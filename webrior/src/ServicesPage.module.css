@@ -169,6 +169,105 @@
     box-shadow: 0 0 10px rgba(26, 144, 255, 0.3);
 }
 
+/* Detail Button */
+.detailButtonContainer {
+    margin-top: 4rem;
+    text-align: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.detailButton {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1A90FF 0%, #00E0A8 100%);
+    color: white;
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 10px 30px rgba(26, 144, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detailButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.detailButton:hover::before {
+    left: 100%;
+}
+
+.detailButton:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(26, 144, 255, 0.6);
+}
+
+.detailButton:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.detailButtonIcon {
+    font-size: 1.5rem;
+    animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.detailButtonArrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.detailButton:hover .detailButtonArrow {
+    transform: translateX(5px);
+}
+
+.detailButtonSubtext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .pageTitle {
@@ -202,5 +301,20 @@
 
     .sectionTitle {
         font-size: 2.5rem;
+    }
+
+    .detailButton {
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+    .detailButtonIcon {
+        font-size: 1.2rem;
+    }
+
+    .detailButtonSubtext {
+        font-size: 0.85rem;
+        padding: 0 1rem;
     }
 }
