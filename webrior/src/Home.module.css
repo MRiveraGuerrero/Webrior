@@ -187,34 +187,41 @@
 }
 
 .testimonialGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonialCard {
     background: #111111;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 2.5rem;
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    max-width: 500px;
+    width: 100%;
+    flex: 1 1 400px;
 }
 
 .testimonialCard:hover {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(26, 144, 255, 0.2);
     transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 .testimonialText {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     color: #CCCCCC;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.8;
     font-weight: 300;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    text-align: left;
 }
 
 .testimonialAuthor {
@@ -224,26 +231,29 @@
 }
 
 .authorAvatar {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #333;
-    border: 1px solid #555;
+    border: 2px solid rgba(26, 144, 255, 0.3);
+    flex-shrink: 0;
 }
 
 .authorInfo h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.95rem;
-    margin: 0;
+    font-size: 1rem;
+    margin: 0 0 0.25rem 0;
     color: #F5F5F5;
     font-weight: 600;
+    text-align: left;
 }
 
 .authorInfo span {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #888;
     font-weight: 300;
+    text-align: left;
 }
 
 /* CTA Section */

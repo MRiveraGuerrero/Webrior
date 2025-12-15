@@ -67,7 +67,7 @@ const WebriorHome = () => {
             <section className={styles.services} style={{ paddingBottom: '2rem' }}>
                 <h2 className={styles.sectionTitle}>Menos ruido, más resultados</h2>
                 <p style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto', color: '#ccc', lineHeight: '1.8', fontSize: '1.1rem' }}>
-                    En Webrior, no solo hacemos webs. Forjamos herramientas digitales diseñadas para destacar en un mercado saturado.
+                    En Webrior, no solo hacemos webs. Forjamos herramientas digitales diseñadas para destacar.
                     Velocidad, estética y estrategia se unen para crear experiencias que tus usuarios no olvidarán.
                 </p>
             </section>
